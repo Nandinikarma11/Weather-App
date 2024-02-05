@@ -26,7 +26,7 @@ const weather_body = document.querySelector('.weather-body');
         location_not_found.style.display = "none";
         weather_body.style.display = "flex";
 
-        temperature.innerHTML = `${Math.round(weather_data.main.temp = 273.15)}°C`;
+        temperature.innerHTML = `${Math.round(weather_data.main.temp - 273.15)}°C`;
      description.innerHTML = `${weather_data.weather[0].description}`; 
      humidity.innerHTML = `${weather_data.main.humidity}%`;
      wind_speed.innerHTML = `${weather_data.wind.speed}km/H`;
